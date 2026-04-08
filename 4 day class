@@ -1,0 +1,445 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "b23fa9d4-cc41-4155-88fb-2f71426169ac",
+   "metadata": {},
+   "source": [
+    "# Day 4"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b1bc08e6-32fd-41d6-98e6-876349b5fdad",
+   "metadata": {},
+   "source": [
+    "# Control Flow Statement"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a8a9e2bd-46c4-4a67-9af6-71dbbb591b98",
+   "metadata": {},
+   "source": [
+    "# if Condition"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "169c7189-d04e-4c32-8130-a6842293a2d0",
+   "metadata": {},
+   "source": [
+    "write a program to calculate the percentage of a student in the subjects maths science social eng and urdu "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "4ea9af8d-839e-4ef5-8f70-70b5cabf41d9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the name of the student Imran\n",
+      "enter the marks in scored in english 90\n",
+      "enter the marks in scored in science 89\n",
+      "enter the marks in scored in social 80\n",
+      "enter the marks in scored in maths 78\n",
+      "enter the marks in scored in urdu 79\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "the percent scored by student is 83.2\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = input(\"enter the name of the student\")\n",
+    "a = int(input(\"enter the marks in scored in english\")) \n",
+    "b = int(input(\"enter the marks in scored in science\")) \n",
+    "c = int(input(\"enter the marks in scored in social\")) \n",
+    "d = int(input(\"enter the marks in scored in maths\")) \n",
+    "e = int(input(\"enter the marks in scored in urdu\")) \n",
+    "n = ((a+b+c+d+e)/500)*100 \n",
+    "print(\"the percent scored by student is\" , n)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "98b1b2a4-d2da-43fc-a0c6-b9026788a494",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the percentage of a student 80\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "B grade\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = int(input(\"enter the percentage of a student\"))\n",
+    "if a>=90:\n",
+    "    print(\"A grade\")\n",
+    "if a>=75 and a<90:\n",
+    "    print(\"B grade\")\n",
+    "if a>=65 and a<75:\n",
+    "    print(\"C grade\")\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5d41a5df-7c6b-4851-9661-72f4ea20b98a",
+   "metadata": {},
+   "source": [
+    "# if else Statement"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "67b73da5-a6c0-47a1-bdfe-e7e48028408a",
+   "metadata": {},
+   "source": [
+    "Write a program to display hello if number entered by a user is a multiple of 5 else print bye"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "03144373-ae74-491d-8cdd-f066d7b5a308",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the number 50\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hello\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = int(input(\"enter the number\"))\n",
+    "if a%5==0:\n",
+    "    print(\"hello\")\n",
+    "else:\n",
+    "    print(\"bye\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "49968638-ad16-4e3d-86d9-2120ae4a5930",
+   "metadata": {},
+   "source": [
+    "Write a program to display hello if number entered by a user is a multiple of 5 else print bye"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "82d83b7f-f493-4e68-991b-e46dace43d1f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the number 42\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "bye\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = int(input(\"enter the number\"))\n",
+    "if a%5==0:\n",
+    "    print(\"hello\")\n",
+    "else:\n",
+    "    print(\"bye\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "25956351-cf27-41c4-ab46-4cc2afeca726",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the number 15\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "positive number\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = int(input(\"enter the number\"))\n",
+    "if a>0:\n",
+    "    print(\"positive number\")\n",
+    "else:\n",
+    "    print(\"negative number\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "b9060f5b-55be-4e16-b9da-2733bca3ab18",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the number -85\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "negative number\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = int(input(\"enter the number\"))\n",
+    "if a>0:\n",
+    "    print(\"positive number\")\n",
+    "else:\n",
+    "    print(\"negative number\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f0779fe1-c2a2-41aa-b183-d789741c9a9d",
+   "metadata": {},
+   "source": [
+    "# if-elif-else"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "93035a17-b330-4fb2-8775-888dafc091b4",
+   "metadata": {},
+   "source": [
+    "accept the country and print its monument\n",
+    "Dubai-burj khalifa\n",
+    "pakistan-char minar\n",
+    "malaysia-sunway lagoon\n",
+    "hongkong-disney land\n",
+    "srilanka candy"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "d6c92122-096e-412d-a222-e4a3e2fac24e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the country srilanka\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "the monument in srilnak is candy\n"
+     ]
+    }
+   ],
+   "source": [
+    "country=input(\"enter the country\")\n",
+    "if country == \"dubai\":\n",
+    "    print(\"the monument in dubai is burj khalifa\")\n",
+    "elif country == \"pakistan\":\n",
+    "    print(\"the monument in pakistan is char minar\")\n",
+    "elif country == \"malaysia\":\n",
+    "    print(\"the monument in malaysia is sunway lagoon\")\n",
+    "elif country == \"hongkong\":\n",
+    "    print(\"the monument in hongkong is disney land\")\n",
+    "elif country == \"srilanka\":\n",
+    "    print(\"the monument in srilnak is candy\")\n",
+    "else:\n",
+    "    print(\"no record found\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "00b2ed6d-db99-48bd-b694-d0a94be61ad7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the country pakistan\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "the monument in pakistan is char minar\n"
+     ]
+    }
+   ],
+   "source": [
+    "country=input(\"enter the country\")\n",
+    "if country == \"dubai\":\n",
+    "    print(\"the monument in dubai is burj khalifa\")\n",
+    "elif country == \"pakistan\":\n",
+    "    print(\"the monument in pakistan is char minar\")\n",
+    "elif country == \"malaysia\":\n",
+    "    print(\"the monument in malaysia is sunway lagoon\")\n",
+    "elif country == \"hongkong\":\n",
+    "    print(\"the monument in hongkong is disney land\")\n",
+    "elif country == \"srilanka\":\n",
+    "    print(\"the monument in srilnak is candy\")\n",
+    "else:\n",
+    "    print(\"no record found\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "92800146-fbad-4b85-bbd9-12d5236480d8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the country dubai\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "the monument in dubai is burj khalifa\n"
+     ]
+    }
+   ],
+   "source": [
+    "country=input(\"enter the country\")\n",
+    "if country == \"dubai\":\n",
+    "    print(\"the monument in dubai is burj khalifa\")\n",
+    "elif country == \"pakistan\":\n",
+    "    print(\"the monument in pakistan is char minar\")\n",
+    "elif country == \"malaysia\":\n",
+    "    print(\"the monument in malaysia is sunway lagoon\")\n",
+    "elif country == \"hongkong\":\n",
+    "    print(\"the monument in hongkong is disney land\")\n",
+    "elif country == \"srilanka\":\n",
+    "    print(\"the monument in srilnak is candy\")\n",
+    "else:\n",
+    "    print(\"no record found\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "28e762a1-6b70-4d8e-a10e-1b7037696b60",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the country baku\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "no record found\n"
+     ]
+    }
+   ],
+   "source": [
+    "country=input(\"enter the country\")\n",
+    "if country == \"dubai\":\n",
+    "    print(\"the monument in dubai is burj khalifa\")\n",
+    "elif country == \"pakistan\":\n",
+    "    print(\"the monument in pakistan is char minar\")\n",
+    "elif country == \"malaysia\":\n",
+    "    print(\"the monument in malaysia is sunway lagoon\")\n",
+    "elif country == \"hongkong\":\n",
+    "    print(\"the monument in hongkong is disney land\")\n",
+    "elif country == \"srilanka\":\n",
+    "    print(\"the monument in srilnak is candy\")\n",
+    "else:\n",
+    "    print(\"no record found\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "65f71304-6c26-40f5-aa26-05c8da43c3a8",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "anaconda-2025.12-py312",
+   "language": "python",
+   "name": "conda-env-anaconda-2025.12-py312-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
